@@ -1,0 +1,52 @@
+.main-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 10px 0 10px 0;
+    .page-title-icon {
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        margin-right: 10px;
+        color: #1BBAE1;
+        height: 52px;
+    }
+    .page-title {
+        display: flex;
+        align-content: center;
+        align-items: flex-start;
+        h3 {
+            font-size: 16px;
+            font-weight: 700;
+            color: #212529;        }
+    }
+    .breadcrumb {
+        margin-left: auto;
+        color: #212529;
+        ul {
+            padding: 10px 16px;
+            list-style: none;
+            li {
+                display: inline;
+                font-size: 13px;
+                +:before {
+                    padding: 5px;
+                    color: black;
+                    content: "/\00a0";
+                  }
+                a {
+                    color: #394263;
+                    text-decoration: none;
+                    &:hover {
+                        color:#EE5A24;
+                    }
+                }
+                .active {
+                    color:#EE5A24;
+                }
+            }
+        }
+    }
+}

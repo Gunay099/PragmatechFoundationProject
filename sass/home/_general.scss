@@ -1,0 +1,20 @@
+* {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+main {
+    margin-top: 40px;
+    min-height: 90vh;
+    padding: 32px;
+    background: #f5f6fa;
+    color: #212529;
+}
+.container {
+    position: relative;
+    margin-left: 240px;
+    transition: margin-left 180px;
+}

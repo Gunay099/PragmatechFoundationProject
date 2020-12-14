@@ -1,0 +1,63 @@
+#button-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px; 
+    .btn-left {
+        margin-right: 20px;
+        button {
+            background: #003059;
+            border: none;
+            border-radius: 2px;
+            color: white;
+            padding: 6px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 12px;
+            margin: 0 0 3px 0;
+            cursor: pointer;
+            .yellow-flag-icon {
+                color: yellow;
+            }
+            .red-flag-icon {
+                color: red;
+            }
+        }
+    }
+    .btn-right {
+        .print-btn {
+            border: none;
+            padding: 6px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            color: grey;
+            margin: 0 0 3px 0;
+            cursor: pointer;
+        }
+        .pdf-btn {
+            border: none;
+            padding: 6px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            color: red;
+            margin: 0 0 3px 0;
+            cursor: pointer;
+        }
+        .excel-btn {
+            border: none;
+            padding: 6px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            color: green;
+            margin: 0 0 3px 0;
+            cursor: pointer;
+        }
+    }
+}
