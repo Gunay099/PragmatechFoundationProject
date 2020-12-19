@@ -1,10 +1,6 @@
-# CRM layihəsi haqqında:
-İlkin olaraq bu layihə bir satış şirkətinin digər sifarişçi şirkət ilə arasında apardığı sorğuları, bağladığı müqavilə və sifariş verilən məhsulların qeydiyyatını (müqaviləyə əlavə sənədi) aparıb siyahıya salmaq, bu siyahını izləmək, hesabatlara nəzarət etmək və s. üçün nəzərdə tutulub. 
+# CRM Layihəsi haqqında
 
-# Gün 01:
--Ana səhifə HTML və CSS ilə yaradıldı  
+CRM bir satış şirkətinin digər sifarişçi şirkət ilə arasında apardığı sorğuları, bağladığı müqavilə və əlavələrin (məhsulların sifarişi üçün yaradılan forma) qeydiyyatını aparıb siyahıya salmaq, bu siyahını izləmək, hesabata nəzarət etmək və s. üçün nəzərdə tutulub.
 
-# Gün 02:
--Sass fayllara bölündü
-# Gün 03:
--Sass kodlar əlavə edildi
+# Gün 1:
+-Ana səhifə yaradıldı
