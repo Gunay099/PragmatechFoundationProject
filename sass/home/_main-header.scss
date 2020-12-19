@@ -1,12 +1,10 @@
-.main-header {
+#main-header {
     position: relative;
-    display: flex;
-    align-items: center;
+    @extend .flex-da;
     padding: 10px 0 10px 0;
     .page-title-icon {
         font-size: 2rem;
-        display: flex;
-        align-items: center;
+        @extend .flex-da;
         align-content: center;
         text-align: center;
         margin-right: 10px;
@@ -14,19 +12,16 @@
         height: 52px;
     }
     .page-title {
-        display: flex;
-        align-content: center;
-        align-items: flex-start;
         h3 {
             font-size: 16px;
             font-weight: 700;
-            color: #212529;        }
+            color: #212529;
+        }
     }
     .breadcrumb {
         margin-left: auto;
         color: #212529;
         ul {
-            padding: 10px 16px;
             list-style: none;
             li {
                 display: inline;

@@ -3,45 +3,39 @@
     top: 0px;
     height: 100%;
     overflow-y: auto;
-    background: #003059;
-    color: #fff;
+    background: $sidebg;
+    color:$sidetxtcolor;
     width: 240px;
-    transition: all .6s ease-in-out;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
-    z-index: 2; 
     a {
-        color: #fff;
+        color: $sidelinkcolor;
         span:last-child {
-            padding-left: .5rem;
+            padding-left: 8px;
         }
     }
     .sidebar-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @extend .flex-dja;
         height: 60px;
         padding: 0 16px;
-        background-color: rgba(0, 0, 0, 0.15);
+        background: $sideheaderbg;
     }
     .sidebar-menu {
         padding: 10px 0;
-        .sidebarList-heading {
-            display: flex;
-            justify-content: space-between;
-            padding: 22px 16px 3px;
+        .sideLi-heading {
+            @extend .flex-dj;
+            padding: 28px 16px 3px;
             margin-bottom: 10px;
-            color: rgba(255, 255, 255, 0.5);
+            color:$sideliheadingcolor;
             text-transform: uppercase;
             font-size: 15px;
         }
-        .sidebarList-subheading {
+        .sideLi-subheading {
             padding: 10px 0px;
-            .sidebarList-subheading-icon {
+            .sideLi-subheading-icon {
                 color: rgba(255, 255, 255, 0.5);
                 margin-left: 12px;
             }
             &:hover {
-                background-color:rgba(0, 0, 0, 0.15);
+                background:rgba(0, 0, 0, 0.15);
                 color: #fff;
                 padding: 10px 0px;
             }

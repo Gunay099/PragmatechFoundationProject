@@ -1,7 +1,5 @@
 #button-group {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @extend .flex-dja;
     margin-bottom: 25px; 
     .btn-left {
         margin-right: 20px;
@@ -13,8 +11,7 @@
             padding: 6px 15px;
             text-align: center;
             text-decoration: none;
-            display: inline-block;
-            font-size: 12px;
+            @extend .btn-display-font;
             margin: 0 0 3px 0;
             cursor: pointer;
             .yellow-flag-icon {
@@ -31,8 +28,7 @@
             padding: 6px 15px;
             text-align: center;
             text-decoration: none;
-            display: inline-block;
-            font-size: 14px;
+            @extend .btn-display-font;
             color: grey;
             margin: 0 0 3px 0;
             cursor: pointer;
@@ -42,8 +38,7 @@
             padding: 6px 15px;
             text-align: center;
             text-decoration: none;
-            display: inline-block;
-            font-size: 14px;
+            @extend .btn-display-font;
             color: red;
             margin: 0 0 3px 0;
             cursor: pointer;
@@ -53,8 +48,7 @@
             padding: 6px 15px;
             text-align: center;
             text-decoration: none;
-            display: inline-block;
-            font-size: 14px;
+            @extend .btn-display-font;
             color: green;
             margin: 0 0 3px 0;
             cursor: pointer;

@@ -1,6 +1,6 @@
 * {
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    margin: 0;
+    font-family: $basic-font;
+    margin: $m-0;
     padding: 0;
     text-decoration: none;
     list-style-type: none;
@@ -16,5 +16,21 @@ main {
 .container {
     position: relative;
     margin-left: 240px;
-    transition: margin-left 180px;
+}
+.flex-dja {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-dj {
+    display: flex;
+    justify-content: space-between;
+}
+.flex-da {
+    display: flex;
+    align-items: center;
+}
+.btn-display-font {
+    display: inline-block;
+    font-size: 12px;
 }
