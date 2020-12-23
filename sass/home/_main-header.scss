@@ -2,13 +2,14 @@
     position: relative;
     @extend .flex-da;
     padding: 10px 0 10px 0;
+    margin-left: 240px;
     .page-title-icon {
         font-size: 2rem;
         @extend .flex-da;
         align-content: center;
         text-align: center;
         margin-right: 10px;
-        color: #1BBAE1;
+        color:  #3498db;
         height: 52px;
     }
     .page-title {

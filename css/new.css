@@ -1,3 +1,74 @@
+.container {
+  width: 100%;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.box {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 250px;
+  border: 1px solid red;
+}
+
+.col-1 {
+  width: 8.33333%;
+}
+
+.col-2 {
+  width: 16.66667%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33333%;
+}
+
+.col-5 {
+  width: 41.66667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33333%;
+}
+
+.col-8 {
+  width: 66.66667%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33333%;
+}
+
+.col-11 {
+  width: 91.66667%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
 #sidebar {
   position: fixed;
   top: 0px;
@@ -83,6 +154,7 @@ header .user-icons {
 #main-header {
   position: relative;
   padding: 10px 0 10px 0;
+  margin-left: 240px;
 }
 
 #main-header .page-title-icon {
@@ -91,7 +163,7 @@ header .user-icons {
       align-content: center;
   text-align: center;
   margin-right: 10px;
-  color: #1BBAE1;
+  color: #3498db;
   height: 52px;
 }
 
@@ -152,11 +224,6 @@ main {
   color: #212529;
 }
 
-.container {
-  position: relative;
-  margin-left: 240px;
-}
-
 .flex-dja, #sidebar .sidebar-header, header, #button-group {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -178,7 +245,7 @@ main {
           justify-content: space-between;
 }
 
-.flex-da, header .search-wrapper, #main-header, #main-header .page-title-icon {
+.flex-da, header .search-wrapper, #main-header, #main-header .page-title-icon, #form fieldset .fieldset-annex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -194,6 +261,7 @@ main {
 
 #table {
   overflow-x: auto;
+  margin-left: 240px;
 }
 
 #table .activity-table {
@@ -244,6 +312,7 @@ main {
   padding-left: 5px;
   font-weight: 700;
   font-size: .7rem;
+  text-align: center;
 }
 
 #table .activity-table .progress {
@@ -274,12 +343,147 @@ main {
   padding: 2px 8px;
 }
 
+#form {
+  background: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  color: #212529;
+  font-size: 14px;
+  margin: 28px 0 0 240px;
+  min-height: 1000px;
+}
+
+#form .form-header {
+  text-align: center;
+  padding: 0 0 15px 0;
+}
+
+#form .form-header h4 {
+  background-color: #e84118;
+  color: #fff;
+  font-size: 20px;
+  padding: 8px;
+}
+
+#form .form-subheader-left {
+  margin-top: -19px;
+}
+
+#form .form-subheader-left table {
+  border-collapse: collapse;
+  margin-left: 16px;
+  -webkit-box-align: initial;
+      -ms-flex-align: initial;
+          align-items: initial;
+}
+
+#form .form-subheader-left th {
+  width: 57%;
+  text-align: left;
+  -webkit-box-shadow: 0 0 12px -5px rgba(0, 0, 0, 0.33);
+          box-shadow: 0 0 12px -5px rgba(0, 0, 0, 0.33);
+}
+
+#form .form-subheader-left td {
+  background-color: #f5f6fa;
+  -webkit-box-shadow: 0 0 12px -5px rgba(0, 0, 0, 0.33);
+          box-shadow: 0 0 12px -5px rgba(0, 0, 0, 0.33);
+}
+
+#form .form-subheader-right table {
+  border-collapse: collapse;
+  margin-left: 280px;
+}
+
+#form .form-subheader-right th {
+  width: 34%;
+  text-align: left;
+  -webkit-box-shadow: 0 0 12px -5px rgba(0, 0, 0, 0.33);
+          box-shadow: 0 0 12px -5px rgba(0, 0, 0, 0.33);
+}
+
+#form .form-subheader-right td {
+  background-color: #f5f6fa;
+  -webkit-box-shadow: 0 0 12px -5px rgba(0, 0, 0, 0.33);
+          box-shadow: 0 0 12px -5px rgba(0, 0, 0, 0.33);
+}
+
+#form .form-subheader-right td input {
+  border: none;
+  background-color: #f5f6fa;
+  -webkit-box-shadow: 0 0 12px -5px rgba(0, 0, 0, 0.33);
+          box-shadow: 0 0 12px -5px rgba(0, 0, 0, 0.33);
+}
+
+#form fieldset {
+  padding: 0 15px 0 15px;
+  margin: 8px 0 8px 0;
+  border: 0;
+}
+
+#form fieldset legend {
+  display: block;
+  width: 100%;
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: inherit;
+  color: #333;
+  border-bottom: 2px solid #c23616;
+}
+
+#form fieldset .fieldset-annex {
+  margin-bottom: 15px;
+}
+
+#form fieldset .fieldset-annex label {
+  font-weight: 700;
+}
+
+#form fieldset .fieldset-annex select {
+  width: 95%;
+  height: 30px;
+}
+
+#form fieldset .fieldset-annex input {
+  width: 95%;
+  height: 30px;
+}
+
+#form #table-annex {
+  background-color: #dcdde1;
+}
+
+#form thead {
+  background-color: #718093;
+}
+
+#form td .product-count-input {
+  width: 50%;
+  height: 39px;
+}
+
+#form td .measure-unit-input {
+  width: 40%;
+  height: 39px;
+}
+
+#form .end-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 #button-group {
   margin-bottom: 25px;
 }
 
 #button-group .btn-left {
   margin-right: 20px;
+  margin-left: 240px;
 }
 
 #button-group .btn-left button {

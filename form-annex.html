@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
+    <title>CRM html</title> 
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/2b29824dc2.js" crossorigin="anonymous"></script>
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/new.css">
+    <!-- icofont -->
+    <link rel="stylesheet" href="vendors/icofont/icofont.min.css">
+</head>
+<body>
+    <!-- START: Container-->
+    <div class="container">
+        <div class="row">
+            <!-- START: Sidebar-->
+            <div class="col-2">
+                <div id="sidebar">
+                    <div class="sidebar-header">
+                        <a href="index.html"  class="sidenav-brand-link"><span>STP Satış</span></a>
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <div class="sidebar-menu">
+                        <ul>
+                            <li class="sideLi-heading">
+                                <span>Sənəd dövriyyəsi</span>
+                                <i class="fas fa-layer-group"></i>
+                            </li>
+                            <li>
+                                <div class="sideLi-subheading">
+                                    <a href="">
+                                        <i class="fas fa-stamp sideLi-subheading-icon"></i>
+                                        <span>Müqavilə</span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="sideLi-subheading">
+                                    <a href="">
+                                        <i class="fas fa-file sideLi-subheading-icon"></i>
+                                        <span>Sorğu</span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--END: Sidebar -->
+            <!--Start: Header-->
+            <div class="col-10">
+                <header>
+                    <div class="search-wrapper">
+                        <i class="fas fa-search"></i>
+                        <input type="search" placeholder="Axtarin...">
+                    </div>
+                    <div class="user-icons">
+                        <i class="fas fa-user-circle fa-lg"></i>
+                    </div>
+                </header>
+            </div>
+            <!--END: Header-->
+        </div>
+        <main>
+            <div class="row">
+                <div class="col-12">
+                <!--START: Form-->
+                <div id="form">
+                    <div class="form-header">
+                        <div class="row">
+                            <div class="col-12">
+                                <h4>Muqaviləyə əlavə formu</h4>
+                            </div>
+                        </div>                                  
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <form action="/action_page.php">
+                                <div class="form-subheader-left">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <th>Müştəri:</th>
+                                                <td>Azersu ASC</td>
+                                            </tr>    
+                                            <tr>
+                                                <th>Müqavilənin növü:</th>
+                                                <td>Alqı-saqı</td>
+                                            </tr>    
+                                            <tr>
+                                                <th>Müqavilə №:</th>
+                                                <td>20202548/25-654</td>
+                                            </tr>    
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </form>
+                         </div>
+                         <div class="col-6">
+                             <form>
+                                  <div class="form-subheader-right">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <th>Tarix:</th>
+                                                <td><input type="date">
+                                                </td>
+                                            </tr>    
+                                            <tr>
+                                                <th>Zavod:</th>
+                                                <td>PMZ</td>
+                                            </tr>    
+                                               <tr>
+                                                <th>Sorğu:</th>
+                                                <td>KSPMZ-201</td>
+                                            </tr> 
+                                            <tr>
+                                                <th>Əlavə №:</th>
+                                                <td>20</td>
+                                            </tr> 
+                                        </tbody>
+                                    </table>
+                                 </div>
+                             </form>
+                        </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <form action="/action_page.php">
+                          <fieldset>
+                            <legend>Satıcı:</legend>
+                            <div class="fieldset-annex">
+                              <div class="col-3 fieldset-input ">
+                                <label for="fname">Ad:</label>
+                                <select name="cars" id="cars">
+                                    <option value="volvo">Volvo</option>
+                                    <option value="saab">Saab</option>
+                                    <option value="mercedes">Mercedes</option>
+                                    <option value="audi">Audi</option>
+                                  </select> 
+                               </div>
+                              <div class="col-3 fieldset-input">
+                                <label for="fname">Soyad:</label>
+                                <input type="text" id="fname" name="fname">
+                              </div>
+                              <div class="col-3 fieldset-input ">
+                                <label for="fname">Vəzifə:</label>
+                                 <input type="text" id="fname" name="fname">
+                                </div>
+                              </div>
+                            </fieldset>
+                          </form>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12">
+                          <form action="/action_page.php">
+                            <fieldset>
+                              <legend>Alıcı:</legend>
+                              <div class="fieldset-annex">
+                                <div class="col-3">
+                                  <label for="fname">Ad:</label>
+                                  <select name="cars" id="cars">
+                                    <option value="volvo">Volvo</option>
+                                    <option value="saab">Saab</option>
+                                    <option value="mercedes">Mercedes</option>
+                                    <option value="audi">Audi</option>
+                                  </select>                                 </div>
+                                <div class="col-3">
+                                  <label for="fname">Soyad:</label>
+                                  <input type="text" id="fname" name="fname">
+                                </div>
+                                <div class="col-3">
+                                  <label for="fname">Vəzifə:</label>
+                                   <input type="text" id="fname" name="fname">
+                                  </div>
+                                </div>
+                              </fieldset>
+                            </form>
+                          </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <form action="/action_page.php">
+                                    <fieldset>
+                                        <legend>Şərtlər:</legend>
+                                        <div class="fieldset-annex">
+                                            <div class="col-3">
+                                                <label for="fname">Ödəniş:</label>
+                                                <textarea cols="30"></textarea>
+                                            </div>
+                                            <div class="col-3">
+                                                <label for="fname">Çatdırılma:</label>
+                                                <textarea cols="30"></textarea>
+                                            </div>
+                                            <div class="col-3">
+                                                <label for="fname">Təhvil müddəti:</label>
+                                                <textarea cols="30"></textarea>
+                                            </div>
+                                            <div class="col-3">
+                                            <label for="fname">Əlavə qeyd:</label>
+                                            <textarea cols="30"></textarea>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- START: Product form -->
+                        <div class="row">
+                            <div class="col-10">
+                                <form action="/action_page.php">
+                                    <fieldset>
+                                        <legend>Məhsul haqqında məlumatlar:</legend>
+                                        <table id="table-annex">
+                                            <tbody>
+                                                <thead>
+                                                    <th>#</th>
+                                                    <th>Mehsul</th>
+                                                    <th>Miqdar</th>
+                                                    <th>Olcu vahidi</th>
+                                                    <th>Vahidin qiymeti</th>
+                                                    <th>Valyuta</th>
+                                                    <th>Cemi mebleg</th>
+                                                </thead>
+                                                <tr>
+                                                    <td class="td-number">1</td>
+                                                    <td><textarea cols="30"></textarea></td>
+                                                    <td><input type="text" class="product-count-input"></td>
+                                                    <td><input type="text" class="measure-unit-input"></td>
+                                                    <td><input type="text" class="product-count-input"></td>
+                                                    <td><input type="text" class="measure-unit-input"></td>
+                                                    <td><input type="text"  class="product-count-input"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </fieldset>
+                                </form>
+                            </div>
+                            <div class="col-1">
+                                <button class="btn-add"><i class="fas fa-plus fa-lg"></i></button>
+                            </div>
+                            <div class="col-1">
+                                <button class="btn-add"><i class="fa fa-refresh" aria-hidden="true"></i></button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                 <div class="end-button">
+                                     <button class="btn-add">OK</button>
+                                     <button class="btn-add">Cixis</i></button>
+                                 </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END: Product form -->
+                    <!--END: Form-->
+                    </div>
+                </div>
+             </main>
+             </div> <!--END: Container-->
+
+</body>
+</html>

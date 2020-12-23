@@ -1,0 +1,50 @@
+.container {
+    width: 100%;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.box {
+    box-sizing: border-box;
+    height: 250px;
+    border: 1px solid red;
+}
+.col-1 {
+    width: $colwidth*1;
+}
+.col-2 {
+    width: $colwidth*2;
+}
+.col-3 {
+    width: $colwidth*3;   
+}
+.col-4 {
+    width: $colwidth*4;
+    
+}
+.col-5 {
+    width: $colwidth*5;
+}
+.col-6 {
+    width: $colwidth*6;
+}
+.col-7 {
+    width: $colwidth*7;
+}
+.col-8 {
+    width: $colwidth*8;
+}
+.col-9 {
+    width: $colwidth*9;
+}
+.col-10 {
+    width: $colwidth*10;
+}
+.col-11 {
+    width: $colwidth*11;
+}
+.col-12 {
+    width: $colwidth*12;
+}
