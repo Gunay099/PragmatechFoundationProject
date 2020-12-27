@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="vendors/icofont/icofont.min.css">
 
 </head>
+
 <body>
     <!-- START: Container-->
     <div class="container">
@@ -21,7 +22,7 @@
                 <div id="sidebar">
                     <div class="sidebar-header">
                         <a href="index.html"  class="sidenav-brand-link"><span>STP Satış</span></a>
-                        <i class="fas fa-bars"></i>
+                        <a><i class="fas fa-bars" id="header-toggle"></i></a>
                     </div>
                     <div class="sidebar-menu">
                         <ul>
@@ -90,11 +91,41 @@
             <div class="row">
                 <div class="col-12">
                     <!--START: Button Group-->
+                    <div id="contract-card">
+                        <div class="col-4 red-card">
+                            <p>25</p>
+                            <p class="card-title">Vaxti bitib</p>
+                        </div>
+                         <div class="col-4 yellow-card">
+                            <p>25</p>
+                            <p class="card-title">Vaxti bitmeyine 2 hefte qalir</p>
+                        </div>
+                        <div class="col-4 green-card">
+                            <p>25</p>
+                            <p class="card-title">Tesdiqlenib</p>
+                        </div>
+                        <div class="col-4 blue-card">
+                            <p>25</p>
+                            <p class="card-title">Prosesde</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="total-number">
+                        Ümumi say: 50
+                    </div>
+                </div>
+            </div>         
+            <!--END: Button Group-->
+             <div class="row">
+                <div class="col-12">
+                    <!--START: Button Group-->
                     <div id="button-group">
                         <div class="btn-left">
-                            <button class="btn-add"><i class="fas fa-plus fa-lg"></i></button>
-                            <button class="btn-add"><i class="fas fa-flag yellow-flag-icon"></i></button>
-                            <button class="btn-add"><i class="fas fa-flag red-flag-icon"></i></button>
+                            <button><i class="fas fa-plus fa-lg"></i></button>
+                            <!-- <button class="trigger" onclick="toggleModal()"><i class="fas fa-paperclip"></i></button> -->
                         </div>
                         <div class="btn-right">
                             <button class="print-btn print-btn-color"><i class="fas fa-print "></i></button>
@@ -112,7 +143,7 @@
                          <table class="activity-table">
                              <thead>
                                  <tr>
-                                    <th><i class="fas fa-paperclip paperclip-icon"></i></th>
+                                    <th><button class="trigger" onclick="toggleModal()"><i class="fas fa-paperclip"></i></button></th>
                                     <th>Düzəliş</th>
                                     <th>Şirkət</th>
                                     <th>Müqavilə Nömrəsi</th>
@@ -126,7 +157,7 @@
                                 </tr>
                              </thead>
                                 <tr>
-                                    <td><i class="fas fa-paperclip paperclip-icon"></i></td>
+                                    <td><button class="trigger" onclick="toggleModal()"><i class="fas fa-paperclip"></i></button></td>
                                     <td>
                                         <i class="far fa-trash-alt trash-icon"></i>
                                         <i class="far fa-edit edit-icon"></i>
@@ -142,7 +173,7 @@
                                     <td><a href="form-annex.html" class="annex-number">0</a></td>
                                 </tr>
                                 <tr>
-                                    <td><i class="fas fa-paperclip paperclip-icon"></i></td>
+                                    <td><button class="trigger" onclick="toggleModal()"><i class="fas fa-paperclip"></i></button></td>
                                     <td>
                                         <i class="far fa-trash-alt trash-icon"></i>
                                         <i class="far fa-edit edit-icon"></i></td>
@@ -157,7 +188,7 @@
                                     <td><a href="form-annex.html" class="annex-number">21</a></td>
                                 </tr>
                                 <tr>
-                                    <td><i class="fas fa-paperclip paperclip-icon"></i></td>
+                                    <td><button class="trigger" onclick="toggleModal()"><i class="fas fa-paperclip"></i></button></td>
                                     <td><i class="far fa-trash-alt trash-icon"></i><i class="far fa-edit edit-icon"></i></td>
                                     <td>Ekol</td>
                                     <td>N/A</td>
@@ -170,8 +201,9 @@
                                     <td><a href="form-annex.html" class="annex-number">21</a></td>
                                 </tr>
                                 <tr>
-                                    <td><i class="fas fa-paperclip paperclip-icon"></i></td>
-                                    <td><i class="far fa-trash-alt trash-icon"></i><i class="far fa-edit edit-icon"></i></td>
+                                    <td><button class="trigger" onclick="toggleModal()"><i class="fas fa-paperclip"></i></button></td>
+                                    <td><i class="far fa-trash-alt trash-icon"></i>
+                                        <i class="far fa-edit edit-icon"></i></td>
                                     <td>Ekol</td>
                                     <td>N/A</td>
                                     <td>Birdəfəlik müqavilə</td>
@@ -183,8 +215,9 @@
                                     <td><a href="form-annex.html" class="annex-number">21</a></td>
                                 </tr>
                                 <tr>
-                                    <td><i class="fas fa-paperclip paperclip-icon"></i></td>
-                                    <td><i class="far fa-trash-alt trash-icon"></i><i class="far fa-edit edit-icon"></i></td>
+                                    <td><button class="trigger" onclick="toggleModal()"><i class="fas fa-paperclip"></i></button></td>
+                                    <td><i class="far fa-trash-alt trash-icon"></i>
+                                        <i class="far fa-edit edit-icon"></i></td>
                                     <td>STP</td>
                                     <td>20200902-09</td>
                                     <td>Xidmet</td>
@@ -196,8 +229,9 @@
                                     <td><a href="form-annex.html" class="annex-number">21</a></td>
                                 </tr>
                                 <tr>
-                                    <td><i class="fas fa-paperclip paperclip-icon"></i></td>
-                                    <td><i class="far fa-trash-alt trash-icon"></i><i class="far fa-edit edit-icon"></i></td>
+                                    <td><button class="trigger" onclick="toggleModal()"><i class="fas fa-paperclip"></i></button></td>
+                                    <td><i class="far fa-trash-alt trash-icon"></i>
+                                        <i class="far fa-edit edit-icon"></i></td>
                                     <td>STP</td>
                                     <td>20200902-09</td>
                                     <td>Xidmet</td>
@@ -209,8 +243,9 @@
                                     <td><a href="form-annex.html" class="annex-number">21</a></td>
                                 </tr>
                                 <tr>
-                                    <td><i class="fas fa-paperclip paperclip-icon"></i></td>
-                                    <td><i class="far fa-trash-alt trash-icon"></i><i class="far fa-edit edit-icon"></i></td>
+                                    <td><button class="trigger" onclick="toggleModal()"><i class="fas fa-paperclip"></i></button></td>
+                                    <td><i class="far fa-trash-alt trash-icon"></i>
+                                        <i class="far fa-edit edit-icon"></i></td>
                                     <td>STP</td>
                                     <td>20200902-09</td>
                                     <td>Xidmet</td>
@@ -222,8 +257,9 @@
                                     <td><a href="form-annex.html" class="annex-number">21</a></td>
                                 </tr>
                                 <tr>
-                                    <td><i class="fas fa-paperclip paperclip-icon"></i></td>
-                                    <td><i class="far fa-trash-alt trash-icon"></i><i class="far fa-edit edit-icon"></i></td>
+                                    <td><button class="trigger" onclick="toggleModal()"><i class="fas fa-paperclip"></i></button></td>
+                                    <td><i class="far fa-trash-alt trash-icon"></i>
+                                        <i class="far fa-edit edit-icon"></i></td>
                                     <td>STP</td>
                                     <td>20200902-09</td>
                                     <td>Xidmet</td>
@@ -235,8 +271,9 @@
                                     <td><a href="form-annex.html" class="annex-number">21</a></td>
                                 </tr>
                                 <tr>
-                                    <td><i class="fas fa-paperclip paperclip-icon"></i></td>
-                                    <td><i class="far fa-trash-alt trash-icon"></i><i class="far fa-edit edit-icon"></i></td>
+                                    <td><button class="trigger" onclick="toggleModal()"><i class="fas fa-paperclip"></i></button></td>
+                                    <td><i class="far fa-trash-alt trash-icon"></i>
+                                        <i class="far fa-edit edit-icon"></i></td>
                                     <td>STP</td>
                                     <td>20200902-09</td>
                                     <td>Xidmet</td>
@@ -248,8 +285,9 @@
                                     <td><a href="#" class="annex-number">21</a></td>
                                 </tr>
                                 <tr>
-                                    <td><i class="fas fa-paperclip paperclip-icon"></i></td>
-                                    <td><i class="far fa-trash-alt trash-icon"></i><i class="far fa-edit edit-icon"></i></td>
+                                    <td><button class="trigger" onclick="toggleModal()"><i class="fas fa-paperclip"></i></button></td>
+                                    <td><i class="far fa-trash-alt trash-icon"></i>
+                                        <i class="far fa-edit edit-icon"></i></td>
                                     <td>STP</td>
                                     <td>20200902-09</td>
                                     <td>Xidmet</td>
@@ -267,5 +305,71 @@
                 </div>
              </main>
             </div> <!--END: Container-->
+           <!-- Modal -->
+           <div class="modal">
+               <div class="modal-content">
+                   <div class="modal-header">
+                       <p>Azersu ASC</p>
+                       <p>Xidmət</p>
+                       <p>№ 20012-02-524</p>
+                       <span class="close-button">&times;</span>
+                    </div>
+                    <div class="modal-headbar">
+                        <button class="tablink modal-button modal-active" onclick="openCity(event, 'London')">Müqavilə</button>
+                        <button class="tablink modal-button modal-active" onclick="openCity(event, 'Paris')">Əlavə</button>
+                    </div>
+                    <div id="London" class="city">
+                        <table>
+                            <tbody>
+                                <thead>
+                                    <th><input type="checkbox"></th>
+                                    <th>Qoşma</th>
+                                    <th>Sənədin adı</th>
+                                </thead>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td><i class="far fa-file-pdf"></i></td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div id="Paris" class="city">
+                        <table class="table">
+                            <tbody>
+                                <thead>
+                                    <th><input type="checkbox"></th>
+                                    <th>Əlavə №</th>
+                                    <th>Qoşma</th>
+                                </thead>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>01</td>
+                                    <td><i class="far fa-file-pdf"></i></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>02</td>
+                                    <td><i class="far fa-file-pdf"></i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="file-attach">
+                         <button>Sənədləri yükləyin</button>
+                    </div>
+                </div>
+            </div>
+
+
+<!-- main js -->
+<script src="main.js"></script>
+
 </body>
 </html>

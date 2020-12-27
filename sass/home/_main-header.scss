@@ -11,6 +11,10 @@
         margin-right: 10px;
         color:  #3498db;
         height: 52px;
+        img {
+            width: 32px;
+            margin-top: -4px;
+        }
     }
     .page-title {
         h3 {
@@ -20,7 +24,7 @@
         }
     }
     .breadcrumb {
-        margin-left: auto;
+        margin: 0 3px 0 auto;
         color: #212529;
         ul {
             list-style: none;

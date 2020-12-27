@@ -28,3 +28,6 @@
 -İkinci səhifə (müqaviləyə əlavə form "form-annex.html") yaradıldı, forma giriş etmək üçün index.html səhifədən cədvəldə "Əlavə" bölməsi üzərindəki rəqəmlərə klik etmək lazımdır. Form üzərində iş davam edir
 -3-cü səhifə şablon olaraq yerləşdirildi (page-annex.html)
 -Sass kodlarla işləndi
+
+# Gün 5:
+-İndex.html-də table üçün javascriptlə modal yaradıldı

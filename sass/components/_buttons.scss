@@ -1,13 +1,14 @@
 #button-group {
     @extend .flex-dja;
-    margin-bottom: 25px; 
+    margin: 25px 3px 32px 0;
     .btn-left {
         margin-right: 20px;
         margin-left: 240px;
         button {
             background: #003059;
             border: none;
-            border-radius: 2px;
+            outline: none;
+            border-radius: .25rem;
             color: white;
             padding: 6px 15px;
             text-align: center;
@@ -15,17 +16,19 @@
             @extend .btn-display-font;
             margin: 0 0 3px 0;
             cursor: pointer;
-            .yellow-flag-icon {
-                color: yellow;
+            &:hover {
+                opacity: 0.9;
             }
-            .red-flag-icon {
-                color: red;
-            }
+       }
+        .btn-contract-number {
+            color: red;
+            border: 1px solid red;
         }
     }
     .btn-right {
         .print-btn {
             border: none;
+            outline: none;
             padding: 6px 15px;
             text-align: center;
             text-decoration: none;
@@ -36,6 +39,7 @@
         }
         .pdf-btn {
             border: none;
+            outline: none;
             padding: 6px 15px;
             text-align: center;
             text-decoration: none;
@@ -46,6 +50,7 @@
         }
         .excel-btn {
             border: none;
+            outline: none;
             padding: 6px 15px;
             text-align: center;
             text-decoration: none;
