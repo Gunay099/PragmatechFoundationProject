@@ -730,4 +730,22 @@ main {
   padding: 10px 0 10PX 0px;
   font-size: 14px;
 }
+
+.item {
+  height: 140px;
+  background-color: grey;
+  border: 1px solid darkgrey;
+}
+
+.item img {
+  width: 100%;
+  height: 140px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.item button {
+  border: 1px solid grey;
+  padding-right: 10px;
+}
 /*# sourceMappingURL=style.css.map */
