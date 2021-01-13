@@ -972,6 +972,7 @@ h5 {
   font-size: 14px;
 }
 
+<<<<<<< HEAD
 .product-form .table-annex .th-wdth {
   width: 100px;
 }
@@ -1092,5 +1093,23 @@ h5 {
 
 .rf-input-groups {
   padding: 0 0 10px 0;
+=======
+.item {
+  height: 140px;
+  background-color: grey;
+  border: 1px solid darkgrey;
+}
+
+.item img {
+  width: 100%;
+  height: 140px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.item button {
+  border: 1px solid grey;
+  padding-right: 10px;
+>>>>>>> b5844dcdcb804a58fcc3fc71930fc43f817a7833
 }
 /*# sourceMappingURL=style.css.map */
