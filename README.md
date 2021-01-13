@@ -33,8 +33,11 @@
 -İndex.html-də table üçün javascriptlə modal yaradıldı
 
 # Gün 6: 
-
 -Müqavilə formu yaradıldı, digər formlar da yeniləndi
 -page-contact və page-bank bölmələr əlavə edildi
 -Javascriptlə nav toggle funksiyası əlavə edildi
 -Yeni sənəd yaratmaq üçün button-da dropdown js-lə yaradıldı
+
+# Gün 7:
+-DB schema yaradıldı (link aşağıdadır)
+[CRM DB Schema](https://dbdesigner.page.link/2NgsfpFeJ9pek9VMA)
