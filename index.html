@@ -1,74 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
-    <title>CRM html</title> 
-    <!-- Fontawesome -->
-    <script src="https://kit.fontawesome.com/2b29824dc2.js" crossorigin="anonymous"></script>
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="css/new.css">
-    <!-- icofont -->
-    <link rel="stylesheet" href="vendors/icofont/icofont.min.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-</head>
+        <!-- ===== BOX ICONS ===== -->
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
-<body>
-    <!-- START: Container-->
-    <div class="container">
-        <div class="row">
-            <!-- START: Sidebar-->
-            <div class="col-2">
-                <div id="sidebar">
-                    <div class="sidebar-header">
-                        <a href="index.html"  class="sidenav-brand-link"><span>STP Satış</span></a>
-                        <a><i class="fas fa-bars" id="header-toggle"></i></a>
-                    </div>
-                    <div class="sidebar-menu">
-                        <ul>
-                            <li class="sideLi-heading">
-                                <span>Sənəd dövriyyəsi</span>
-                                <i class="fas fa-layer-group"></i>
-                            </li>
-                            <li>
-                                <div class="sideLi-subheading">
-                                    <a href="">
-                                        <i class="fas fa-stamp sideLi-subheading-icon"></i>
-                                        <span>Müqavilə</span>
-                                    </a>
+        <!-- ===== FONTAWESOME ===== -->
+        <script src="https://kit.fontawesome.com/2b29824dc2.js" crossorigin="anonymous"></script>
+
+        <!-- ===== ICOFONT ===== -->
+        <link rel="stylesheet" href="vendors/icofont/icofont.min.css">
+
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <title>Müqavilə</title>
+    </head>
+    <body id="body-pd">
+        <!--START: Container-->
+        <div class="container">
+            <!--START: Header-->
+            <div class="row">
+                <div class="col-12">
+                    <header class="header" id="header">
+                        <div class="col-12 search-wrapper">
+                            <i class="fas fa-search"></i>
+                            <input type="search" placeholder="Axtarin...">
+                        </div>            
+                        <div class="header-img">
+                            <img src="img/user.png" alt="">
+                        </div>
+                    </header>
+                </div>
+            </div>
+            <!--END: Header-->
+
+            <!--START: Navbar-->
+            <div class="row">
+                <div class="col-2">
+                    <div class="l-navbar" id="nav-bar">
+                        <nav class="nav">
+                            <div class="logo">
+                                <div class="menu-logo">
+                                    <i class='bx bx-menu' id="menu-toggle"></i>
+                                    <a href="index.html" class="logo-color">Sales</a>
                                 </div>
-                            </li>
-                            <li>
-                                <div class="sideLi-subheading">
-                                    <a href="">
-                                        <i class="fas fa-file sideLi-subheading-icon"></i>
-                                        <span>Sorğu</span>
-                                    </a>
-                                </div>
-                            </li>
-                        </ul>
+                            </div>
+                            <div class="nav-list">
+                                <a href="index.html" class="nav-link active">
+                                    <i class='bx bx-grid-alt nav-icon' ></i>
+                                    <span class="nav-name">Müqavilə</span>
+                                </a>
+                                <a href="page-request.html" class="nav-link">
+                                    <i class='bx bxs-file-blank nav-icon'></i>
+                                    <span>Sorğu</span>
+                                </a>
+                            </div>
+                        </nav>
                     </div>
                 </div>
             </div>
-            <!--END: Sidebar -->
-            <!--Start: Header-->
-            <div class="col-10">
-                <header>
-                    <div class="search-wrapper">
-                        <i class="fas fa-search"></i>
-                        <input type="search" placeholder="Axtarin...">
-                    </div>
-                    <div class="user-icons">
-                        <i class="fas fa-user-circle fa-lg"></i>
-                    </div>
-                </header>
-            </div>
-            <!--END: Header-->
-        </div>
-        <main>
+            <!--END: Navbar-->
+            
+            <!--START: Main Header-->
             <div class="row">
                 <div class="col-12">
-                    <!--START: Main Header-->
                     <div id="main-header">
                         <div class="page-title-icon">
                             <i class="icofont-law-document"></i>
@@ -80,33 +78,38 @@
                             <ul>
                                 <li><a href="index.html" class="active">Müqavilə</a></li>
                                 <li><a href="page-annex.html">Əlavə</a></li>
-                                <li><a href="#">Kontakt</a></li>
-                                <li><a href="#">Bank</a></li>
+                                <li><a href="page-contact.html">Kontakt</a></li>
+                                <li><a href="page-bank.html">Bank</a></li>
                             </ul>
                         </div>
                     </div>
-                    <!--END: Main Header-->
                 </div>
             </div>
+            <!--END: Main Header-->
+
+            <!--START: Cards-->
             <div class="row">
                 <div class="col-12">
-                    <!--START: Button Group-->
                     <div id="contract-card">
                         <div class="col-4 red-card">
                             <p>25</p>
-                            <p class="card-title">Vaxti bitib</p>
+                            <p class="card-title">Vaxti bitən</p>
+                            <i class="icofont-exclamation-circle"></i>
                         </div>
-                         <div class="col-4 yellow-card">
+                        <div class="col-4 yellow-card">
                             <p>25</p>
-                            <p class="card-title">Vaxti bitmeyine 2 hefte qalir</p>
-                        </div>
-                        <div class="col-4 green-card">
-                            <p>25</p>
-                            <p class="card-title">Tesdiqlenib</p>
+                            <p class="card-title">Vaxti bitmeyine 2 hefte qalan</p>
+                            <i class='bx bxs-alarm-exclamation'></i>
                         </div>
                         <div class="col-4 blue-card">
                             <p>25</p>
-                            <p class="card-title">Prosesde</p>
+                            <p class="card-title">Prosesdə</p>
+                            <i class="icofont-sand-clock"></i>
+                        </div>
+                        <div class="col-4 green-card">
+                            <p>25</p>
+                            <p class="card-title">Təsdiqlənib</p>
+                            <i class='bx bxs-check-circle'></i>
                         </div>
                     </div>
                 </div>
@@ -117,15 +120,21 @@
                         Ümumi say: 50
                     </div>
                 </div>
-            </div>         
-            <!--END: Button Group-->
-             <div class="row">
+            </div>
+            <!--END: Cards-->
+
+            <!--START: Button Group-->
+            <div class="row">
                 <div class="col-12">
-                    <!--START: Button Group-->
                     <div id="button-group">
                         <div class="btn-left">
-                            <button><i class="fas fa-plus fa-lg"></i></button>
-                            <!-- <button class="trigger" onclick="toggleModal()"><i class="fas fa-paperclip"></i></button> -->
+                            <button onclick="myFunction()" class="dropbtn">+ Sənəd yarat</button>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href="form-contracts.html">Alqı-satqı</a>
+                                <a href="#about">Xidmət</a>
+                                <a href="#contact">Agent</a>
+                                <a href="#contact">Distribyutor</a>
+                            </div>
                         </div>
                         <div class="btn-right">
                             <button class="print-btn print-btn-color"><i class="fas fa-print "></i></button>
@@ -133,18 +142,19 @@
                             <button class="excel-btn excel-btn-color "><i class="far fa-file-excel"></i></button>
                         </div>
                     </div>
-                    <!--END: Button Group-->
                 </div>
             </div>
+            <!--END: Button Group-->
+            
+            <!--START: Table-->
             <div class="row">
                 <div class="col-12">
-                     <!--START: Table-->
-                     <div id="table">
-                         <table class="activity-table">
-                             <thead>
-                                 <tr>
-                                    <th><button class="trigger" onclick="toggleModal()"><i class="fas fa-paperclip"></i></button></th>
-                                    <th>Düzəliş</th>
+                    <div id="table">
+                        <table class="activity-table">
+                            <thead>
+                                <tr>
+                                    <th><button class="trigger" onclick="toggleModal()" class="thead-btn"><i class="fas fa-paperclip"></i></button></th>
+                                    <th colspan="2">Düzəliş</th>
                                     <th>Şirkət</th>
                                     <th>Müqavilə Nömrəsi</th>
                                     <th>Müqavilə Növü</th>
@@ -155,221 +165,220 @@
                                     <th>İcraçı</th>
                                     <th>Əlavə</th>
                                 </tr>
-                             </thead>
+                            </thead>
                                 <tr>
                                     <td><button class="trigger" onclick="toggleModal()"><i class="fas fa-paperclip"></i></button></td>
-                                    <td>
-                                        <i class="far fa-trash-alt trash-icon"></i>
-                                        <i class="far fa-edit edit-icon"></i>
-                                     </td>
+                                    <td><i class="far fa-trash-alt trash-icon"></i></td>
+                                    <td><i class="far fa-edit edit-icon"></i></td>
                                     <td>Ekol</td>
                                     <td>N/A</td>
                                     <td>Birdəfəlik müqavilə</td>
                                     <td>01.12.2020</td>
                                     <td>01.12.2020</td>
                                     <td>Bextiyar Babayev</td>
-                                    <td class="badge progress">Prosesdə</td>
+                                    <td><span class="badge progress">Prosesdə</span></td>
                                     <td>Sabina Safarzade</td>
-                                    <td><a href="form-annex.html" class="annex-number">0</a></td>
+                                    <td><a href="form-annex.html"><input type="button" class="annex-number" value="0"></a></td>
                                 </tr>
                                 <tr>
                                     <td><button class="trigger" onclick="toggleModal()"><i class="fas fa-paperclip"></i></button></td>
-                                    <td>
-                                        <i class="far fa-trash-alt trash-icon"></i>
-                                        <i class="far fa-edit edit-icon"></i></td>
+                                    <td><i class="far fa-trash-alt trash-icon"></i></td>
+                                    <td><i class="far fa-edit edit-icon"></i></td>
                                     <td>Ekol</td>
                                     <td>N/A</td>
                                     <td>Birdəfəlik müqavilə</td>
                                     <td>01.12.2020</td>
                                     <td>01.12.2020</td>
                                     <td>Bextiyar Babayev</td>
-                                    <td class="badge warning">Vaxtı bitir</td>
+                                    <td><span  class="badge warning">Vaxtı bitir</span></td>
                                     <td>Sabina Safarzade</td>
-                                    <td><a href="form-annex.html" class="annex-number">21</a></td>
+                                    <td><input type="button" class="annex-number" value="20"></td>
                                 </tr>
                                 <tr>
                                     <td><button class="trigger" onclick="toggleModal()"><i class="fas fa-paperclip"></i></button></td>
-                                    <td><i class="far fa-trash-alt trash-icon"></i><i class="far fa-edit edit-icon"></i></td>
+                                    <td><i class="far fa-trash-alt trash-icon"></i></td>
+                                    <td><i class="far fa-edit edit-icon"></i></td>  
                                     <td>Ekol</td>
                                     <td>N/A</td>
                                     <td>Birdəfəlik müqavilə</td>
                                     <td>01.12.2020</td>
                                     <td>01.12.2020</td>
                                     <td>Bextiyar Babayev</td>
-                                    <td>Tesdiglendi</td>
+                                    <td><span class="badge progress">Prosesdə</span></td>
                                     <td>Sabina Safarzade</td>
-                                    <td><a href="form-annex.html" class="annex-number">21</a></td>
+                                    <td><input type="button" class="annex-number" value="0"></td>
                                 </tr>
                                 <tr>
                                     <td><button class="trigger" onclick="toggleModal()"><i class="fas fa-paperclip"></i></button></td>
-                                    <td><i class="far fa-trash-alt trash-icon"></i>
-                                        <i class="far fa-edit edit-icon"></i></td>
+                                    <td><i class="far fa-trash-alt trash-icon"></i></td>
+                                    <td><i class="far fa-edit edit-icon"></i></td>
                                     <td>Ekol</td>
                                     <td>N/A</td>
                                     <td>Birdəfəlik müqavilə</td>
                                     <td>01.12.2020</td>
                                     <td>01.12.2020</td>
                                     <td>Bextiyar Babayev</td>
-                                    <td class="badge success">Tesdiglendi</td>
+                                    <td><span  class="badge success">Tesdiglendi</span></td>
                                     <td>Gunay Gasimova</td>
-                                    <td><a href="form-annex.html" class="annex-number">21</a></td>
+                                    <td><input type="button" class="annex-number" value="10"></td>
                                 </tr>
                                 <tr>
                                     <td><button class="trigger" onclick="toggleModal()"><i class="fas fa-paperclip"></i></button></td>
-                                    <td><i class="far fa-trash-alt trash-icon"></i>
-                                        <i class="far fa-edit edit-icon"></i></td>
+                                    <td><i class="far fa-trash-alt trash-icon"></i></td>
+                                    <td><i class="far fa-edit edit-icon"></i></td>
                                     <td>STP</td>
                                     <td>20200902-09</td>
                                     <td>Xidmet</td>
                                     <td>21.11.2019</td>
                                     <td>21.11.2020</td>
                                     <td>Leyla Haciyeva</td>
-                                    <td>Tesdiglendi</td>
+                                    <td><span class="badge progress">Prosesdə</span></td>
                                     <td>Gunay Gasimova</td>
-                                    <td><a href="form-annex.html" class="annex-number">21</a></td>
+                                    <td><input type="button" class="annex-number" value="11"></td>
                                 </tr>
                                 <tr>
                                     <td><button class="trigger" onclick="toggleModal()"><i class="fas fa-paperclip"></i></button></td>
-                                    <td><i class="far fa-trash-alt trash-icon"></i>
-                                        <i class="far fa-edit edit-icon"></i></td>
+                                    <td><i class="far fa-trash-alt trash-icon"></i></td>
+                                    <td><i class="far fa-edit edit-icon"></i></td>
                                     <td>STP</td>
                                     <td>20200902-09</td>
                                     <td>Xidmet</td>
                                     <td>21.11.2019</td>
                                     <td>21.11.2020</td>
                                     <td>Leyla Haciyeva</td>
-                                    <td>Tesdiglendi</td>
+                                    <td><span class="badge progress">Prosesdə</span></td>
                                     <td>Gunay Gasimova</td>
-                                    <td><a href="form-annex.html" class="annex-number">21</a></td>
+                                    <td><input type="button" class="annex-number" value="28"></td>
                                 </tr>
                                 <tr>
                                     <td><button class="trigger" onclick="toggleModal()"><i class="fas fa-paperclip"></i></button></td>
-                                    <td><i class="far fa-trash-alt trash-icon"></i>
-                                        <i class="far fa-edit edit-icon"></i></td>
+                                    <td><i class="far fa-trash-alt trash-icon"></i></td>
+                                    <td><i class="far fa-edit edit-icon"></i></td>
                                     <td>STP</td>
                                     <td>20200902-09</td>
                                     <td>Xidmet</td>
                                     <td>21.11.2019</td>
                                     <td>21.11.2020</td>
                                     <td>Leyla Haciyeva</td>
-                                    <td class="badge danger">Vaxtı bitib</td>
+                                    <td><span class="badge danger">Vaxtı bitib</span></td>
                                     <td>Gunay Gasimova</td>
-                                    <td><a href="form-annex.html" class="annex-number">21</a></td>
+                                    <td><input type="button" class="annex-number" value="87"></td>
                                 </tr>
                                 <tr>
                                     <td><button class="trigger" onclick="toggleModal()"><i class="fas fa-paperclip"></i></button></td>
-                                    <td><i class="far fa-trash-alt trash-icon"></i>
-                                        <i class="far fa-edit edit-icon"></i></td>
+                                    <td><i class="far fa-trash-alt trash-icon"></i></td>
+                                    <td><i class="far fa-edit edit-icon"></i></td>
                                     <td>STP</td>
                                     <td>20200902-09</td>
                                     <td>Xidmet</td>
                                     <td>21.11.2019</td>
                                     <td>21.11.2020</td>
                                     <td>Leyla Haciyeva</td>
-                                    <td>Tesdiglendi</td>
+                                    <td><span class="badge progress">Prosesdə</span></td>
                                     <td>Gunay Gasimova</td>
-                                    <td><a href="form-annex.html" class="annex-number">21</a></td>
+                                    <td><input type="button" class="annex-number" value="78"></td>
                                 </tr>
                                 <tr>
                                     <td><button class="trigger" onclick="toggleModal()"><i class="fas fa-paperclip"></i></button></td>
-                                    <td><i class="far fa-trash-alt trash-icon"></i>
-                                        <i class="far fa-edit edit-icon"></i></td>
+                                    <td><i class="far fa-trash-alt trash-icon"></i></td>
+                                    <td><i class="far fa-edit edit-icon"></i></td>
                                     <td>STP</td>
                                     <td>20200902-09</td>
                                     <td>Xidmet</td>
                                     <td>21.11.2019</td>
                                     <td>21.11.2020</td>
                                     <td>Leyla Haciyeva</td>
-                                    <td>Tesdiglendi</td>
+                                    <td><span class="badge progress">Prosesdə</span></td>
                                     <td>Gunay Gasimova</td>
-                                    <td><a href="#" class="annex-number">21</a></td>
+                                    <td><input type="button" class="annex-number" value="32"></td>
                                 </tr>
                                 <tr>
                                     <td><button class="trigger" onclick="toggleModal()"><i class="fas fa-paperclip"></i></button></td>
-                                    <td><i class="far fa-trash-alt trash-icon"></i>
-                                        <i class="far fa-edit edit-icon"></i></td>
+                                    <td><i class="far fa-trash-alt trash-icon"></i></td>
+                                    <td><i class="far fa-edit edit-icon"></i></td>
                                     <td>STP</td>
                                     <td>20200902-09</td>
                                     <td>Xidmet</td>
                                     <td>21.11.2019</td>
                                     <td>21.11.2020</td>
                                     <td>Leyla Haciyeva</td>
-                                    <td>Tesdiglendi</td>
+                                    <td><span class="badge progress">Prosesdə</span></td>
                                     <td>Gunay Gasimova</td>
-                                    <td><a href="#" class="annex-number">21</a></td>
+                                    <td><input type="button" class="annex-number" value="14"></td>
                                 </tr>
-                            </table>
-                        </div>
-                        <!--END: Table-->
-                    </div>
-                </div>
-             </main>
-            </div> <!--END: Container-->
-           <!-- Modal -->
-           <div class="modal">
-               <div class="modal-content">
-                   <div class="modal-header">
-                       <p>Azersu ASC</p>
-                       <p>Xidmət</p>
-                       <p>№ 20012-02-524</p>
-                       <span class="close-button">&times;</span>
-                    </div>
-                    <div class="modal-headbar">
-                        <button class="tablink modal-button modal-active" onclick="openCity(event, 'London')">Müqavilə</button>
-                        <button class="tablink modal-button modal-active" onclick="openCity(event, 'Paris')">Əlavə</button>
-                    </div>
-                    <div id="London" class="city">
-                        <table>
-                            <tbody>
-                                <thead>
-                                    <th><input type="checkbox"></th>
-                                    <th>Qoşma</th>
-                                    <th>Sənədin adı</th>
-                                </thead>
-                                <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td><i class="far fa-file-pdf"></i></td>
-                                    <td>3</td>
-                                </tr>
-                                <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td>2</td>
-                                    <td>3</td>
-                                </tr>
-                            </tbody>
                         </table>
-                    </div>
-                    
-                    <div id="Paris" class="city">
-                        <table class="table">
-                            <tbody>
-                                <thead>
-                                    <th><input type="checkbox"></th>
-                                    <th>Əlavə №</th>
-                                    <th>Qoşma</th>
-                                </thead>
-                                <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td>01</td>
-                                    <td><i class="far fa-file-pdf"></i></td>
-                                </tr>
-                                <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td>02</td>
-                                    <td><i class="far fa-file-pdf"></i></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="file-attach">
-                         <button>Sənədləri yükləyin</button>
                     </div>
                 </div>
             </div>
+            <!--END: Table-->
+        </div> 
+        <!--END: Container-->
+          
+        <!-- START: Modal -->
+        <div class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p>Azersu ASC</p>
+                    <p>Xidmət</p>
+                    <p>№ 20012-02-524</p>
+                    <span class="close-button">&times;</span>
+                </div>
+                <div class="modal-headbar">
+                    <button class="tablink modal-button modal-active" onclick="openCity(event, 'Contract')">Müqavilə</button>
+                    <button class="tablink modal-button modal-active" onclick="openCity(event, 'Annex')">Əlavə</button>
+                </div>
+                <div id="Contract" class="tbl-menu">
+                    <table>
+                        <thead>
+                            <th><input type="checkbox"></th>
+                            <th>Qoşma</th>
+                            <th>Sənədin adı</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td><i class="far fa-file-pdf"></i></td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>2</td>
+                                <td>3</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div id="Annex" class="tbl-menu">
+                    <table class="table">
+                        <thead>
+                            <th><input type="checkbox"></th>
+                            <th>Əlavə №</th>
+                            <th>Qoşma</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>01</td>
+                                <td><i class="far fa-file-pdf"></i></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>02</td>
+                                <td><i class="far fa-file-pdf"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="file-attach">
+                    <input type="text" value="Yukleyin">
+                </div>
+            </div>
+        </div>
+        <!-- END: Modal -->
 
-
-<!-- main js -->
-<script src="main.js"></script>
-
-</body>
+     
+    <!--===== MAIN JS =====-->
+    <script src="main.js"></script>
+    </body>
 </html>

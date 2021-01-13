@@ -6,12 +6,9 @@
     list-style-type: none;
     box-sizing: border-box;
 }
-main {
-    margin-top: 40px;
-    min-height: 90vh;
-    padding: 32px;
-    background: #f5f6fa;
-    color: #212529;
+.main {
+    background-color: #f5f6fa;
+    margin-right: 32px;
 }
 .flex-dja {
     display: flex;
@@ -34,4 +31,11 @@ main {
 .card-styling {
     font-weight: 700;
     margin-right: 10px;
+}
+.icon-styling {
+    position: relative;
+    top: -52px;
+    left: 239px;
+    font-size: 43px;
+    opacity: 0.4;
 }

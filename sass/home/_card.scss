@@ -1,43 +1,52 @@
+// Contract-cards
 #contract-card {
-    height: 66px;
-    margin-left: 240px;
     display: flex;
     justify-content: space-around;
+    height: 80px;
+    margin-right: 32px;
     .red-card {
-        background-color: $contrCardBg;
-        color: black;
-        border-left: 3px solid red;
+        background-color: #c0392b;
+        color: white;
         @extend .card-styling;
+         i {
+            @extend .icon-styling;
+      }
     }
     .yellow-card {
-        background-color: $contrCardBg;
-        color: black;
-        border-left: 3px solid yellow;
+        background-color:orange;
+        color: white;
         @extend .card-styling;
-    }
-    .green-card {
-        background-color: $contrCardBg;
-        color: black;
-        border-left: 3px solid green;
-        @extend .card-styling;
+        i {
+            @extend .icon-styling;
+      }
     }
     .blue-card {
-        background-color: $contrCardBg;
-        color: black;
-        border-left: 3px solid blue;
-        font-weight: 700;
+        background-color: #2980b9;
+        color: white;
+        @extend .card-styling;
+        i {
+            @extend .icon-styling;
+      }
+    }
+    .green-card {
+        background-color: #27ae60;
+        color: white;
+        i {
+            @extend .icon-styling;
+      }
     }
     p {
-        padding: 10px 0 0 10px;
+        padding: 15px 0 0 10px;
     }
     .card-title {
         font-size: 14px;
         font-weight: 500;
         padding: 8px;
     }
-    .total-number {
-        margin-left: 240px;
-        padding: 10px 0 10PX 0px;
-        font-size: 14px;
-    }
+
 }
+.total-number {
+    padding: 10px 0 0 0;
+    font-size: 14px;
+}
+

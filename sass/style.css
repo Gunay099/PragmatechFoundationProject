@@ -116,10 +116,6 @@
   padding: 19px 0 8px 27px;
 }
 
-.l-navbar .nav .logo .menu-logo a {
-  color: white;
-}
-
 .l-navbar .nav-list {
   padding-top: 21px;
 }
@@ -649,33 +645,33 @@
   background-color: #f1f1f1;
 }
 
-.modal .modal-content .modal-headbar table {
+.modal .modal-content table {
   width: 100%;
   border-collapse: collapse;
   font-size: 12px;
   background: #fff;
 }
 
-.modal .modal-content .modal-headbar table th {
+.modal .modal-content table th {
   padding: 15px 0 15px 15px;
   text-align: left;
   font-weight: bold;
   border-bottom: 2px solid #EE5A24;
 }
 
-.modal .modal-content .modal-headbar table td {
+.modal .modal-content table td {
   padding: 15px 0 15px 15px;
   border: none;
   background: transparent;
 }
 
-.modal .modal-content .modal-headbar .file-attach {
+.modal .modal-content .file-attach {
   position: relative;
   top: 260px;
   margin: 0 8px 0 8px;
 }
 
-.modal .modal-content .modal-headbar .file-attach button {
+.modal .modal-content .file-attach button {
   width: 100%;
   background: #fff;
   border: 1px solid #3498db;
@@ -742,6 +738,7 @@
   font-size: 14px;
 }
 
+/* ===== MEDIA QUERIES=====*/
 .form-body {
   font-family: Roboto,Arial,Helvetica,sans-serif,"Segoe UI Emoji","Segoe UI Symbol";
   background-color: #003059;
@@ -1080,7 +1077,7 @@ h5 {
   background-color: rgba(26, 115, 232, 0.8);
 }
 
-.end-button .ok-btn .cncl-btn button {
+.end-button .cncl-btn button {
   width: 100px;
   padding: 6px;
   background-color: white;

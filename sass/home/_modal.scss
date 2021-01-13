@@ -1,3 +1,4 @@
+// Modal
 .modal {
     position: fixed;
     left: 0;
@@ -49,14 +50,13 @@
                     color: #000;
                     background-color: #ccc;
                 }
-               }
+            }
             .modal-active {
                 background-color: #f1f1f1;
             }
-        }
         table {
-            border-collapse: collapse;
             width: 100%;
+            border-collapse: collapse;
             font-size: 12px;
             background: #fff;
             th {
@@ -76,16 +76,17 @@
             top: 260px;
             margin: 0 8px 0 8px;
             button {
+                width: 100%;
                 background: #fff;
                 border: 1px solid #3498db;
                 outline: none;
                 padding: 8px;
-                width: 100%;
                 box-sizing: border-box;
                 cursor: pointer;
             }
         }
     }
+}
 }
 .show-modal {
    opacity: 1;

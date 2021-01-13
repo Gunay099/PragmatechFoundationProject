@@ -69,10 +69,10 @@
                 <div class="col-12">
                     <div id="main-header">
                         <div class="page-title-icon">
-                            <img src="img/paperclip.png" alt="">
+                            <img src="img/rfp.png" alt="">
                         </div>
                         <div class="page-title">
-                            <h3>Müqaviləyə əlavə</h3>
+                            <h3>Sorğu/Qiymət təklifi</h3>
                         </div>
                         <div class="breadcrumb">
                             <ul>
@@ -93,15 +93,23 @@
                     <div id="contract-card">
                         <div class="col-4 red-card">
                             <p>25</p>
-                            <p class="card-title">ƏDV-siz</p>
+                            <p class="card-title">Prosesdə</p>
                         </div>
                         <div class="col-4 yellow-card">
                             <p>25</p>
-                            <p class="card-title">ƏDV-li</p>
+                            <p class="card-title">Təsdiqlənib</p>
                         </div>
                         <div class="col-4 blue-card">
                             <p>25</p>
-                            <p class="card-title">Cəmi əlavə</p>
+                            <p class="card-title">Vaxtı bitir</p>
+                        </div>
+                        <div class="col-4 blue-card">
+                            <p>25</p>
+                            <p class="card-title">Vaxti bitib</p>
+                        </div>
+                        <div class="col-4 blue-card">
+                            <p>25</p>
+                            <p class="card-title">İmtina edilən</p>
                         </div>
                     </div>
                 </div>
@@ -120,6 +128,10 @@
                 <div class="col-12">
                     <div id="button-group">
                         <div class="btn-left">
+                            <button onclick="myFunction()" class="dropbtn">+ Sənəd yarat</button>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href="form-request.html">Sorğu</a>
+                            </div>
                         </div>
                         <div class="btn-right">
                             <button class="print-btn print-btn-color"><i class="fas fa-print "></i></button>
@@ -138,181 +150,170 @@
                         <table class="activity-table">
                             <thead>
                                 <tr>
+                                    <th><button class="trigger" onclick="toggleModal()" class="thead-btn"><i class="fas fa-paperclip"></i></button></th>
                                     <th></th>
                                     <th></th>
                                     <th>Şirkət</th>
                                     <th>Sorğu №</th>
-                                    <th>Müqavilə №</th>
-                                    <th>Müqavilə Növü</th>
-                                    <th>Əlavə №</th>
-                                    <th>Satış Meneceri</th>
+                                    <th>Təklif növü</th>
                                     <th>Məhsul</th>
-                                    <th>Ödəniş şərti</th>
                                     <th>Məbləğ (ƏDV-siz)</th>
                                     <th>Məbləğ (ƏDV-li)</th>
+                                    <th>Satış Meneceri</th>
+                                    <th>Sorğunun bitmə vaxtı</th>
+                                    <th>Status</th>
                                     <th>Yaradılma Tarixi</th>
-                                    <th>Qarşı tərəfin imza tarixi</th>
                                 </tr>
                              </thead>
                                 <tr>
+                                    <td><button class="trigger" onclick="toggleModal()"><i class="fas fa-paperclip"></i></button></td>
                                     <td><i class="far fa-trash-alt trash-icon"></i></td>
                                     <td><i class="far fa-edit edit-icon"></i></td>
                                     <td>Ekol EKol Ekol</td>
                                     <td>KS-PMZ-021</td>
-                                    <td>20140131-08-001</td>
-                                    <td>Birdəfəlik müqavilə</td>
-                                    <td>001</td>
-                                    <td>Sabina Safarzade</td>
+                                    <td>Diller</td>
                                     <td>PE boru DN</td>
-                                    <td>50% avans, 50% mehsul tehvilinden sonra</td>
                                     <td>60025.00</td>
                                     <td>8523.25</td>
+                                    <td>Sabina Safarzade</td>
+                                    <td>5 iş günü</td>
+                                    <td><span class="badge progress">Prosesdə</span></td>
                                     <td>12.31.2020</td>
-                                    <td>15.31.2020</td>
                                 </tr>
                                 <tr>
+                                    <td><button class="trigger" onclick="toggleModal()"><i class="fas fa-paperclip"></i></button></td>
                                     <td><i class="far fa-trash-alt trash-icon"></i></td>
                                     <td><i class="far fa-edit edit-icon"></i></td>
-                                    <td>Ekol</td>
+                                    <td>Ekol EKol Ekol</td>
                                     <td>KS-PMZ-021</td>
-                                    <td>20140131-08-001</td>
-                                    <td>Birdəfəlik müqavilə</td>
-                                    <td>001</td>
-                                    <td>Sabina Safarzade</td>
+                                    <td>Diller</td>
                                     <td>PE boru DN</td>
-                                    <td>50% avans, 50% mehsul tehvilinden sonra</td>
                                     <td>60025.00</td>
                                     <td>8523.25</td>
+                                    <td>Sabina Safarzade</td>
+                                    <td>5 iş günü</td>
+                                    <td><span class="badge success">Təsdiqlənib</span></td>
                                     <td>12.31.2020</td>
-                                    <td>15.31.2020</td>
                                 </tr>
                                 <tr>
+                                    <td><button class="trigger" onclick="toggleModal()"><i class="fas fa-paperclip"></i></button></td>
                                     <td><i class="far fa-trash-alt trash-icon"></i></td>
                                     <td><i class="far fa-edit edit-icon"></i></td>
-                                    <td>Ekol</td>
+                                    <td>Ekol EKol Ekol</td>
                                     <td>KS-PMZ-021</td>
-                                    <td>20140131-08-001</td>
-                                    <td>Birdəfəlik müqavilə</td>
-                                    <td>001</td>
-                                    <td>Sabina Safarzade</td>
+                                    <td>Korporativ satış</td>
                                     <td>PE boru DN</td>
-                                    <td>50% avans, 50% mehsul tehvilinden sonra</td>
                                     <td>60025.00</td>
                                     <td>8523.25</td>
+                                    <td>Sabina Safarzade</td>
+                                    <td>5 iş günü</td>
+                                    <td><span class="badge danger">Vaxtı bitib</span></td>
                                     <td>12.31.2020</td>
-                                    <td>15.31.2020</td>
                                 </tr>
                                 <tr>
+                                    <td><button class="trigger" onclick="toggleModal()"><i class="fas fa-paperclip"></i></button></td>
                                     <td><i class="far fa-trash-alt trash-icon"></i></td>
                                     <td><i class="far fa-edit edit-icon"></i></td>
-                                    <td>Ekol</td>
+                                    <td>Ekol EKol Ekol</td>
                                     <td>KS-PMZ-021</td>
-                                    <td>20140131-08-001</td>
-                                    <td>Birdəfəlik müqavilə</td>
-                                    <td>001</td>
-                                    <td>Sabina Safarzade</td>
+                                    <td>Korporativ satış</td>
                                     <td>PE boru DN</td>
-                                    <td>50% avans, 50% mehsul tehvilinden sonra</td>
                                     <td>60025.00</td>
                                     <td>8523.25</td>
+                                    <td>Sabina Safarzade</td>
+                                    <td>5 iş günü</td>
+                                    <td><span class="badge danger">İmtina edildi</span></td>
                                     <td>12.31.2020</td>
-                                    <td>15.31.2020</td>
                                 </tr>
                                 <tr>
+                                    <td><button class="trigger" onclick="toggleModal()"><i class="fas fa-paperclip"></i></button></td>
                                     <td><i class="far fa-trash-alt trash-icon"></i></td>
                                     <td><i class="far fa-edit edit-icon"></i></td>
-                                    <td>Ekol</td>
+                                    <td>Ekol EKol Ekol</td>
                                     <td>KS-PMZ-021</td>
-                                    <td>20140131-08-001</td>
-                                    <td>Birdəfəlik müqavilə</td>
-                                    <td>001</td>
-                                    <td>Sabina Safarzade</td>
+                                    <td>Korporativ satış</td>
                                     <td>PE boru DN</td>
-                                    <td>50% avans, 50% mehsul tehvilinden sonra</td>
                                     <td>60025.00</td>
                                     <td>8523.25</td>
+                                    <td>Sabina Safarzade</td>
+                                    <td>5 iş günü</td>
+                                    <td><span class="badge warning">Vaxtı bitir</span></td>
                                     <td>12.31.2020</td>
-                                    <td>15.31.2020</td>
                                 </tr>
                                 <tr>
+                                    <td><button class="trigger" onclick="toggleModal()"><i class="fas fa-paperclip"></i></button></td>
                                     <td><i class="far fa-trash-alt trash-icon"></i></td>
                                     <td><i class="far fa-edit edit-icon"></i></td>
-                                    <td>Ekol</td>
+                                    <td>Ekol EKol Ekol</td>
                                     <td>KS-PMZ-021</td>
-                                    <td>20140131-08-001</td>
-                                    <td>Birdəfəlik müqavilə</td>
-                                    <td>001</td>
-                                    <td>Sabina Safarzade</td>
+                                    <td>Korporativ satış</td>
                                     <td>PE boru DN</td>
-                                    <td>50% avans, 50% mehsul tehvilinden sonra</td>
                                     <td>60025.00</td>
                                     <td>8523.25</td>
+                                    <td>Sabina Safarzade</td>
+                                    <td>5 iş günü</td>
+                                    <td><span class="badge progress">Prosesdə</span></td>
                                     <td>12.31.2020</td>
-                                    <td>15.31.2020</td>
                                 </tr>
                                 <tr>
+                                    <td><button class="trigger" onclick="toggleModal()"><i class="fas fa-paperclip"></i></button></td>
                                     <td><i class="far fa-trash-alt trash-icon"></i></td>
                                     <td><i class="far fa-edit edit-icon"></i></td>
-                                    <td>Ekol</td>
+                                    <td>Ekol EKol Ekol</td>
                                     <td>KS-PMZ-021</td>
-                                    <td>20140131-08-001</td>
-                                    <td>Birdəfəlik müqavilə</td>
-                                    <td>001</td>
-                                    <td>Sabina Safarzade</td>
+                                    <td>Korporativ satış</td>
                                     <td>PE boru DN</td>
-                                    <td>50% avans, 50% mehsul tehvilinden sonra</td>
                                     <td>60025.00</td>
                                     <td>8523.25</td>
+                                    <td>Sabina Safarzade</td>
+                                    <td>5 iş günü</td>
+                                    <td><span class="badge progress">Prosesdə</span></td>
                                     <td>12.31.2020</td>
-                                    <td>15.31.2020</td>
                                 </tr>
                                 <tr>
+                                    <td><button class="trigger" onclick="toggleModal()"><i class="fas fa-paperclip"></i></button></td>
                                     <td><i class="far fa-trash-alt trash-icon"></i></td>
                                     <td><i class="far fa-edit edit-icon"></i></td>
-                                    <td>Ekol</td>
+                                    <td>Ekol EKol Ekol</td>
                                     <td>KS-PMZ-021</td>
-                                    <td>20140131-08-001</td>
-                                    <td>Birdəfəlik müqavilə</td>
-                                    <td>001</td>
-                                    <td>Sabina Safarzade</td>
+                                    <td>Korporativ satış</td>
                                     <td>PE boru DN</td>
-                                    <td>50% avans, 50% mehsul tehvilinden sonra</td>
                                     <td>60025.00</td>
                                     <td>8523.25</td>
+                                    <td>Sabina Safarzade</td>
+                                    <td>5 iş günü</td>
+                                    <td><span class="badge progress">Prosesdə</span></td>
                                     <td>12.31.2020</td>
-                                    <td>15.31.2020</td>
                                 </tr>
                                 <tr>
+                                    <td><button class="trigger" onclick="toggleModal()"><i class="fas fa-paperclip"></i></button></td>
                                     <td><i class="far fa-trash-alt trash-icon"></i></td>
                                     <td><i class="far fa-edit edit-icon"></i></td>
-                                    <td>Ekol</td>
+                                    <td>Ekol EKol Ekol</td>
                                     <td>KS-PMZ-021</td>
-                                    <td>20140131-08-001</td>
-                                    <td>Birdəfəlik müqavilə</td>
-                                    <td>001</td>
-                                    <td>Sabina Safarzade</td>
+                                    <td>Korporativ satış</td>
                                     <td>PE boru DN</td>
-                                    <td>50% avans, 50% mehsul tehvilinden sonra</td>
                                     <td>60025.00</td>
                                     <td>8523.25</td>
+                                    <td>Sabina Safarzade</td>
+                                    <td>5 iş günü</td>
+                                    <td><span class="badge progress">Prosesdə</span></td>
                                     <td>12.31.2020</td>
-                                    <td>15.31.2020</td>
                                 </tr>
                                 <tr>
+                                    <td><button class="trigger" onclick="toggleModal()"><i class="fas fa-paperclip"></i></button></td>
                                     <td><i class="far fa-trash-alt trash-icon"></i></td>
                                     <td><i class="far fa-edit edit-icon"></i></td>
-                                    <td>Ekol</td>
+                                    <td>Ekol EKol Ekol</td>
                                     <td>KS-PMZ-021</td>
-                                    <td>20140131-08-001</td>
-                                    <td>Birdəfəlik müqavilə</td>
-                                    <td>001</td>
-                                    <td>Sabina Safarzade</td>
+                                    <td>Korporativ satış</td>
                                     <td>PE boru DN</td>
-                                    <td>50% avans, 50% mehsul tehvilinden sonra</td>
                                     <td>60025.00</td>
                                     <td>8523.25</td>
+                                    <td>Sabina Safarzade</td>
+                                    <td>5 iş günü</td>
+                                    <td><span class="badge progress">Prosesdə</span></td>
                                     <td>12.31.2020</td>
-                                    <td>15.31.2020</td>
                                 </tr>
                         </table>
                     </div>
@@ -321,7 +322,69 @@
             <!--END: Table-->
         </div> 
         <!--END: Container-->
-
+        
+        <!-- START: Modal -->
+        <div class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p></p>
+                    <p>Azersu ASC</p>
+                    <p>kspmz-01</p>
+                    <span class="close-button">&times;</span>
+                </div>
+                <div class="modal-headbar">
+                    <button class="tablink modal-button modal-active" onclick="openCity(event, 'London')">Müqavilə</button>
+                    <button class="tablink modal-button modal-active" onclick="openCity(event, 'Paris')">Əlavə</button>
+                </div>
+                <div id="London" class="city">
+                    <table>
+                        <thead>
+                            <th><input type="checkbox"></th>
+                            <th>Qoşma</th>
+                            <th>Sənədin adı</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td><i class="far fa-file-pdf"></i></td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>2</td>
+                                <td>3</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div id="Paris" class="city">
+                    <table class="table">
+                        <thead>
+                            <th><input type="checkbox"></th>
+                            <th>Əlavə №</th>
+                            <th>Qoşma</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>01</td>
+                                <td><i class="far fa-file-pdf"></i></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>02</td>
+                                <td><i class="far fa-file-pdf"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="file-attach">
+                    <input type="file">
+                </div>
+            </div>
+        </div>
+        <!-- END: Modal -->
      
     <!--===== MAIN JS =====-->
     <script src="main.js"></script>

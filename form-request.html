@@ -54,7 +54,7 @@
             <!--START: Form-->
             <div class="row">
                 <div class="col-12">
-                    <h5>Müqaviləyə əlavə (Annex)</h5>
+                    <h5>Qiymət təklifi/Sorğu</h5>
                     <div class="forms">
                         <div class="col-3">
                             <div class="form-container">
@@ -62,29 +62,34 @@
                                 <hr>
                                 <div class="col-12">
                                     <div class="rf-input-groups">
-                                        <label>Müştəri</label>
-                                        <input type="text" placeholder="Azersu ASC">
+                                        <label>Müştəri:</label>
+                                        <input type="text" placeholder="Şirkət adı">
+                                    </div>
+                                </div>
+                                <div class="col-12 ">
+                                    <div class="rf-input-groups">
+                                        <label>Məsul şəxs:</label>
+                                        <input type="text" placeholder="Ad/Soyad">
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="rf-input-groups">
-                                        <label>Müştəri</label>
+                                        <label>Təklifin növü</label>
                                         <select>
-                                            <option>Alqı-saqı</option>
-                                            <option>Xidmet</option>
-
+                                            <option>Korporativ satış</option>
+                                            <option>Diller</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="rf-input-groups">
-                                        <label>Müqavilə №:</label>
-                                        <input type="number" placeholder="0202548/25-654">
+                                        <label>Təklifin bitmə vaxtı:</label>
+                                        <input type="number" placeholder="İş günü">
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="rf-input-groups">
-                                        <label>Tarix:</label>
+                                        <label>Yaradılma tarixi:</label>
                                         <input type="date" placeholder="Ad">
                                     </div>
                                 </div>
@@ -101,12 +106,6 @@
                                     <div class="rf-input-groups">
                                         <label>Sorğu #:</label>
                                         <input type="date" placeholder="KSPMZ-201">
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="rf-input-groups">
-                                        <label>Əlavə №:</label>
-                                        <input type="date" placeholder="20">
                                     </div>
                                 </div>
                             </div>
@@ -145,7 +144,7 @@
                                         </tbody>
                                     </table>
                                     <div class="row">
-                                        <div class="col-10">
+                                        <div class="col-2">
                                             <div class="add-row-btn">
                                                 <input type="button" value="Yeni sətr əlavə et" onclick="addTable('tblSample')">
                                             </div>
@@ -158,97 +157,6 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="forms">
-                        <div class="col-3">
-                            <div class="form-container">
-                                <h3>Satıcı</h3>
-                                <hr>
-                                <div class="col-12">
-                                    <div class="rf-input-groups">
-                                        <label>Ad:</label>
-                                        <input type="text" placeholder="Azersu ASC">
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="label col-3">
-                                    </div>
-                                    <div class="rf-input-groups">
-                                        <label>Soyad:</label>
-                                        <input type="text" placeholder="Azersu ASC">
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="rf-input-groups">
-                                        <label>Vəzifə:</label>
-                                        <input type="text" placeholder="Azersu ASC">
-                                    </div>
-                                </div>
-                                <h3>Alıcı</h3>
-                                <hr>
-                                <div class="col-12">
-                                    <div class="rf-input-groups">
-                                        <label>Ad:</label>
-                                        <input type="text" placeholder="Azersu ASC">
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="label col-3">
-                                    </div>
-                                    <div class="rf-input-groups">
-                                        <label>Soyad:</label>
-                                        <input type="text" placeholder="Azersu ASC">
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="rf-input-groups">
-                                        <label>Vəzifə:</label>
-                                        <input type="text" placeholder="Azersu ASC">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="forms">
-                        <div class="col-3">
-                            <div class="form-container">
-                                <h3>Şərtlər</h3>
-                                <hr>
-                                <div class="col-12">
-                                    <div class="rf-input-groups">
-                                        <label>Ödəniş:</label>
-                                        <textarea cols="30"></textarea>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="rf-input-groups">
-                                        <label>Çatdırılma:</label>
-                                        <textarea cols="30"></textarea>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="rf-input-groups">
-                                        <label>Təhvil müddəti:</label>
-                                        <textarea cols="30"></textarea>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="rf-input-groups">
-                                        <label>Əlavə qeyd:</label>
-                                        <textarea cols="30"></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
             <div class="row">
                 <div class="col-12">
                     <div class="form-end-btns">
